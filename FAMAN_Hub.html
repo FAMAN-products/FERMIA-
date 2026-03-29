@@ -899,7 +899,7 @@ ${decisions.length>0?`<h1>5. Journal des decisions</h1><table><tr><th>Date</th><
   }
 
   return (
-    <div style={{ fontFamily: "'Segoe UI', -apple-system, sans-serif", background: COLORS.bg, minHeight: "100vh", maxWidth: 520, margin: "0 auto" }}>
+    <div style={{ fontFamily: "'Segoe UI', -apple-system, sans-serif", background: COLORS.bg, minHeight: "100vh", maxWidth: 960, margin: "0 auto" }}>
       <div style={{ background: COLORS.forest, padding: "16px 16px 14px", position: "sticky", top: 0, zIndex: 100 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
@@ -1013,7 +1013,7 @@ const SEED_CHECKLIST = [
   { id:"p51", cat:"humain", task:"Fiche de poste signée", done:false },
   { id:"p52", cat:"humain", task:"Protocole quotidien imprimé et affiché (pictogrammes)", done:false },
   { id:"p53", cat:"humain", task:"Personne backup identifiée et briefée", done:false },
-  { id:"p54", cat:"humain", task:"Smartphone manœuvre opérationnel avec KOKODAM", done:false },
+  { id:"p54", cat:"humain", task:"Smartphone manœuvre opérationnel avec FERMIA", done:false },
   { id:"p60", cat:"admin", task:"Toutes les autorisations obtenues", done:false },
   { id:"p61", cat:"admin", task:"Registre d'élevage prêt", done:false },
   { id:"p62", cat:"admin", task:"Contrat fournisseur aliment signé", done:false },
@@ -1607,7 +1607,7 @@ function ModuleBComp() {
   if (!cl || !vl || !sl) return <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100vh", color:C.forest }}>Chargement...</div>;
 
   return (
-    <div style={{ fontFamily:"'Segoe UI', -apple-system, sans-serif", background:C.bg, minHeight:"100vh", maxWidth:520, margin:"0 auto" }}>
+    <div style={{ fontFamily:"'Segoe UI', -apple-system, sans-serif", background:C.bg, minHeight:"100vh", maxWidth:960, margin:"0 auto" }}>
       {/* Header */}
       <div style={{ background:C.forest, padding:"16px 16px 14px", position:"sticky", top:0, zIndex:100 }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center" }}>
@@ -2108,7 +2108,7 @@ function ModuleCComp() {
   if (!pl || !al) return <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100vh", color:C.forest }}>Chargement...</div>;
 
   return (
-    <div style={{ fontFamily:"'Segoe UI', -apple-system, sans-serif", background:C.bg, minHeight:"100vh", maxWidth:520, margin:"0 auto" }}>
+    <div style={{ fontFamily:"'Segoe UI', -apple-system, sans-serif", background:C.bg, minHeight:"100vh", maxWidth:960, margin:"0 auto" }}>
       <div style={{ background:C.forest, padding:"16px 16px 14px", position:"sticky", top:0, zIndex:100 }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center" }}>
           <div>
@@ -2320,7 +2320,7 @@ function ModuleDComp() {
   const daysUntilPoussins = Math.max(0, Math.ceil((poussinsDate - today) / 86400000));
 
   return (
-    <div style={{ fontFamily: "'Segoe UI', -apple-system, sans-serif", background: C.bg, minHeight: "100vh", maxWidth: 520, margin: "0 auto" }}>
+    <div style={{ fontFamily: "'Segoe UI', -apple-system, sans-serif", background: C.bg, minHeight: "100vh", maxWidth: 960, margin: "0 auto" }}>
 
       {/* Header */}
       <div style={{ background: C.forest, padding: "16px 16px 20px" }}>
@@ -2627,7 +2627,7 @@ function ModuleKComp() {
         <div style={{ display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap" }}>
           <div style={{ width: 44, height: 44, borderRadius: "50%", background: "linear-gradient(135deg, " + G + ", " + GOLD_D + ")", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 900, color: F, fontFamily: "Georgia, serif" }}>F</div>
           <div>
-            <div style={{ fontSize: 18, fontWeight: 800, fontFamily: "Georgia, serif", color: G, letterSpacing: 1 }}>KOKODAM</div>
+            <div style={{ fontSize: 18, fontWeight: 800, fontFamily: "Georgia, serif", color: G, letterSpacing: 1 }}>FERMIA</div>
             <div style={{ fontSize: 11, color: GOLD_L, letterSpacing: 1.5, textTransform: "uppercase" }}>Module 1 — Simulateur Financier</div>
           </div>
           <div style={{ marginLeft: "auto", textAlign: "right" }}>
@@ -2637,7 +2637,7 @@ function ModuleKComp() {
         </div>
       </div>
 
-      <div style={{ padding: "16px 14px", maxWidth: 900, margin: "0 auto" }}>
+      <div style={{ padding: "16px 14px", maxWidth: 960, margin: "0 auto" }}>
         {/* PARAMÈTRES PRINCIPAUX */}
         <Panel>
           <STitle icon="⚙" text="PARAMÈTRES PRINCIPAUX" />
